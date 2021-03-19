@@ -1,0 +1,59 @@
+//Classes for the details container component
+//=====================================================================================================x
+.pokedex-details{
+	flex-grow: 2;
+	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 2fr;
+}
+
+
+//Classes for the Pokemon Frame Component
+//====================================================================================================
+.pokemon-name {
+	color: black;
+	text-transform: capitalize;
+	background-color: $purple;
+	text-align: justify;
+}
+
+.pokemon-image {
+	width: 100%;
+	animation: jump .5s infinite alternate;
+	display: flex;
+	justify-content: center;
+	
+}
+
+ @keyframes jump {
+ 	0% {
+ 		transform: translateY(0);
+ 	}
+
+ 	100% {
+ 		transform: translateY(-10px);
+ 	}
+ }
+
+.pokemon-frame {
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+	background: repeating-linear-gradient(0deg, $light-purple, $light-purple 5px, white 7px, white 10px);
+	min-height: 25vh;
+}
+
+// Classes for Pokemon Attributes Component
+//====================================================================================================
+.pokemon-attributes{
+	border: 3px solid $green;
+	grid-column: 2 / span 2;
+}
+
+// Classes for Text Container Component
+//====================================================================================================
+.text-container{
+	border: 3px solid aqua;
+	grid-column: 1 / span 2;
+	grid-row: 2;
+}

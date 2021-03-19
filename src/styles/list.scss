@@ -1,0 +1,45 @@
+.pokemon-list-container{
+	 background: $light-gray;
+	 overflow-y: scroll;
+	 overflow-x: hidden;
+}
+
+.pokemon-list{
+	list-style-type: none;
+}
+li{
+	text-transform: capitalize;
+}
+li:hover{
+	color: $green;
+	cursor:pointer;
+}
+li:focus {
+	background: red;
+	outline: 0;
+}
+// ========= Srollbar Styles ================
+/* Works on Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 2.5em;
+}
+
+*::-webkit-scrollbar-track {
+	background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-image:linear-gradient(180deg,
+		red 50%,
+		white 50%);
+	border-radius: 50%;
+	border: 3px solid blue;
+}
+
+//=============================================
