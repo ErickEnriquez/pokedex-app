@@ -2,7 +2,7 @@ import React from 'react'
 import List from './List.js'
 import Details from './Details.js'
 import '../styles/layout.scss'
-const Pokedex = require('../api/getKantoPokemon')
+import Pokedex from '../api/getKantoPokemon'
 class App extends React.Component {
 	constructor(props) {
 		super(props)

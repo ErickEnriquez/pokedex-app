@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 
-//return all original 151 pokemon
-module.exports = {
+const Pokedex = {
+	//return all original 151 pokemon
 	getKantoPokemon: async () => {
 		//create an array of promises to pass to PromiseAll
 		let responses = [];
@@ -21,3 +21,6 @@ module.exports = {
 		return data
 	}
 }
+
+export default Pokedex
+
