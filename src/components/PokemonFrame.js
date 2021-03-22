@@ -5,8 +5,9 @@ import React from 'react'
 //component
 const PokemonFrame = (props) => {
 	//const image = props.activePokemon ? props.activePokemon.sprites.versions['generation-i']['red-blue'].front_default : ''
-	const image = props.activePokemon ? props.activePokemon.sprites.versions['generation-iii']['emerald'].front_default : ''
-	//const image = props.activePokemon ? props.activePokemon.sprites.front_default : ''
+	//const image = props.activePokemon ? props.activePokemon.sprites.versions['generation-iii']['emerald'].front_default : ''
+	//const image = props.activePokemon ? props.activePokemon.sprites.versions['generation-ii']['crystal'].front_default : ''
+	const image = props.activePokemon ? props.activePokemon.sprites.front_default : ''
 	return (
 		<div className="pokemon-frame">
 			{props.activePokemon ?

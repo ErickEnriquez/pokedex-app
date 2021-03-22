@@ -23,7 +23,6 @@
 	display: flex;
 	justify-content: center;
 	border-bottom: 5px solid $purple;
-	//border-right: 5px solid $purple;
 	border-left: 5px solid $purple	
 }
 
@@ -51,7 +50,7 @@
 // Classes for Pokemon Attributes Component
 //====================================================================================================
 .pokemon-attributes{
-	border: 3px solid $green;
+	
 	grid-column: 2 / span 2;
 }
 
@@ -61,4 +60,41 @@
 	border: 3px solid aqua;
 	grid-column: 1 / span 2;
 	grid-row: 2;
+}
+// Classes for Pokemon Stats Component
+///====================================================================================================
+.pokemon-stats{
+	display: flex;
+	flex-direction: column;
+}
+
+.stats{
+	flex-grow: 1;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	text-transform: capitalize;
+}
+
+.hp{
+	background-color: $color-hp;
+}
+
+.attack{
+	background-color: $color-attack;
+}
+
+.defense{
+	background-color: $color-defense;
+}
+
+.special-attack{
+	background-color: $color-sp-attack;
+}
+
+.special-defense{
+	background-color: $color-sp-defense;
+}
+.speed{
+	background-color: $color-speed;
 }
