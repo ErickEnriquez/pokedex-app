@@ -6,7 +6,7 @@ const Pokedex = {
 		//create an array of promises to pass to PromiseAll
 		let responses = [];
 		for (let i = 1; i <= 151; i++) {
-			responses.push(fetch(`https://pokeapi.co/api/v2/pokemon/${i}`));
+			responses.push(fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`));
 		}
 		//wait until we get response from all of the responses
 		let res = await Promise.all(responses)
