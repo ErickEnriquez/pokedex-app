@@ -56,8 +56,8 @@
 
 .attribute-title{
 	margin-top: .5em;
-	background-color: $gray !important;
 	padding: 0em 3em  !important;
+	font-weight: 600;
 	border-radius: 5px;
 }
 
@@ -65,7 +65,6 @@
 	text-transform: capitalize;
 	display: flex;
 	justify-content: space-evenly;
-	font-weight: 600;
 	margin: .5em;
 	div{
 		padding: 0em 2em;

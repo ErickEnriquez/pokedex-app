@@ -13,10 +13,10 @@ class PokemonAttributes extends React.Component {
 
 		const weightAndHeight = activePokemon ? (
 			<div className="pokemon-w-t">
-				<span>
+				<span className="attribute-title">
 					Weight: {(activePokemon.weight) / 10} kg
 				</span>
-				<span>
+				<span className="attribute-title">
 					Height: {(activePokemon.height) / 10} m
 				</span>
 			</div>
@@ -42,12 +42,12 @@ class PokemonAttributes extends React.Component {
 			< div className="pokemon-attributes" >
 				{pokedexEntry}
 				<div className="pokemon-types">
-					<span>Types: </span>
+					<span className="attribute-title">Types: </span>
 					{types}
 				</div>
 				{weightAndHeight}
 				<div className="pokemon-abilities">
-					<span>Pokemon Abilities:</span> {abilities}
+					<span className="attribute-title">Pokemon Abilities:</span> {abilities}
 				</div>
 			</div>
 		)
