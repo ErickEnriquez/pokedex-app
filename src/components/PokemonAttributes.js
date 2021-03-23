@@ -4,20 +4,51 @@ class PokemonAttributes extends React.Component {
 
 	render () {
 		const activePokemon = this.props.activePokemon ? this.props.activePokemon : null
-		const height = activePokemon ? ` height ${(activePokemon.height) / 10} m` : null
-		const weight = activePokemon ? ` weight ${(activePokemon.weight) / 10} kg` : null
+
+		const pokedexEntry = activePokemon ? (
+			<div className="pokedex-entry">
+				<span>No: </span> <span>{activePokemon.game_indices[9].game_index}</span>
+			</div>
+		) : null
+
+		const weightAndHeight = activePokemon ? (
+			<div className="pokemon-w-t">
+				<span>
+					Weight: {(activePokemon.weight) / 10} kg
+				</span>
+				<span>
+					Height: {(activePokemon.height) / 10} m
+				</span>
+			</div>
+		) : null
+
 		const types = activePokemon ? activePokemon.types.map((item, index) => {
 			return (
-				<div key={index} className={item.type.name} >
+				<div key={index} className={`${item.type.name}`} >
 					{item.type.name}
 				</div>
 			)
 		}) : null
+
+		const abilities = activePokemon ? activePokemon.abilities.map((item, index) => {
+			return (
+				<span key={index} className="pokemon-ability">
+					{item.ability.name}
+				</span>
+			)
+		}) : null
+
 		return (
 			< div className="pokemon-attributes" >
-				<p>{height}</p>
-				<p>{weight}</p>
-				{types}
+				{pokedexEntry}
+				<div className="pokemon-types">
+					<span>Types: </span>
+					{types}
+				</div>
+				{weightAndHeight}
+				<div className="pokemon-abilities">
+					<span>Pokemon Abilities:</span> {abilities}
+				</div>
 			</div>
 		)
 	}

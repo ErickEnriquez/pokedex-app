@@ -50,9 +50,61 @@
 // Classes for Pokemon Attributes Component
 //====================================================================================================
 .pokemon-attributes{
-	
 	grid-column: 2 / span 2;
-	background-color: #ccc;
+	background-color: $light-orange;
+}
+
+
+.pokemon-types{
+	text-transform: capitalize;
+	display: flex;
+	justify-content: space-evenly;
+	font-weight: 600;
+	margin: .5em;
+	div{
+		padding: 0em 2em;
+		border-radius: 5px;
+		color: white;
+	}
+}
+
+.pokemon-w-t{
+	display: flex;
+	justify-content: space-evenly;
+	span{
+		background-color: white;
+		padding: 0em 1.5em;
+		border-radius: 5px;
+	}
+}
+
+.pokedex-entry{
+	display: flex;
+	justify-content: space-evenly;
+	span{
+		margin-top: .5em;
+		background-color: white;
+		padding: 0em 3em;
+		border-radius: 5px;
+	}
+}
+
+.pokemon-abilities{
+	margin-top: .5em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex-direction: column;
+	span{
+		justify-self: center;
+		align-self: center;
+	}
+	.pokemon-ability{
+		margin-top:.3em;
+		background-color: white;
+		padding: 0em 2em;
+		border-radius: 5px;
+	}
 }
 
 .water{ background-color: $water-type; }
@@ -96,27 +148,18 @@
 	justify-content: space-between;
 	align-content: center;
 	text-transform: capitalize;
+	font-weight: 700;
+	color: #333;
 }
 
-.hp{
-	background-color: $color-hp;
-}
+.hp{ background-color: $color-hp; }
 
-.attack{
-	background-color: $color-attack;
-}
+.attack{ background-color: $color-attack; }
 
-.defense{
-	background-color: $color-defense;
-}
+.defense{ background-color: $color-defense; }
 
-.special-attack{
-	background-color: $color-sp-attack;
-}
+.special-attack{ background-color: $color-sp-attack; }
 
-.special-defense{
-	background-color: $color-sp-defense;
-}
-.speed{
-	background-color: $color-speed;
-}
+.special-defense{ background-color: $color-sp-defense; }
+
+.speed{background-color: $color-speed;}
