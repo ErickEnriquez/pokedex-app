@@ -9,6 +9,7 @@
 }
 li{
 	text-transform: capitalize;
+	min-width: 7vw;
 }
 li:hover{
 	color: $green;
@@ -27,7 +28,7 @@ li:focus {
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-	width: 2.5em;
+	width: 6vw;
 }
 
 *::-webkit-scrollbar-track {

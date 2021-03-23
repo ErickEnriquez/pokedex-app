@@ -52,14 +52,36 @@
 .pokemon-attributes{
 	
 	grid-column: 2 / span 2;
+	background-color: #ccc;
 }
+
+.water{ background-color: $water-type; }
+.normal{ background-color: $normal-type; }
+.fire { background-color: $fire-type; }
+.electric { background-color: $electric-type; }
+.grass { background-color: $grass-type; }
+.ice { background-color: $ice-type; }
+.fighting { background-color: $fighting-type; }
+.poison { background-color: $poison-type; }
+.ground { background-color: $ground-type; }
+.flying { background-color: $flying-type; }
+.psychic { background-color: $psychic-type; }
+.bug { background-color: $bug-type; }
+.rock { background-color: $rock-type; }
+.ghost { background-color: $ghost-type; }
+.dragon { background-color: $dragon-type; }
+.dark { background-color: $dark-type; }
+.steel { background-color: $steel-type; }
+.fairy { background-color: $fairy-type; }
+
+
 
 // Classes for Text Container Component
 //====================================================================================================
 .text-container{
-	border: 3px solid aqua;
 	grid-column: 1 / span 2;
 	grid-row: 2;
+	background-color: #aaa;
 }
 // Classes for Pokemon Stats Component
 ///====================================================================================================
