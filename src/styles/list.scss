@@ -2,6 +2,7 @@
 	 background: $light-gray;
 	 overflow-y: scroll;
 	 overflow-x: hidden;
+	 height: 100%;
 }
 
 .pokemon-list{
@@ -19,11 +20,18 @@ li:focus {
 	background: red;
 	outline: 0;
 }
+
+@media screen and(max-width: 576px){
+	.pokemon-list-container{
+		height: 100px ;
+	}
+}
+
 // ========= Srollbar Styles ================
 /* Works on Firefox */
 * {
 	scrollbar-width: thin;
-	scrollbar-color: blue orange;
+	scrollbar-color: blue red;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -41,6 +49,30 @@ li:focus {
 		white 50%);
 	border-radius: 50%;
 	border: 2px solid black;
+}
+
+@media screen and(min-width: 576px) {
+	* {
+		scrollbar-width: none;
+		scrollbar-color:none;
+	}
+
+	/* Works on Chrome, Edge, and Safari */
+	*::-webkit-scrollbar {
+		width: 6vw;
+	}
+
+	*::-webkit-scrollbar-track {
+		background: white;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		background-image: linear-gradient(180deg,
+				red 50%,
+				white 50%);
+		border-radius: 50%;
+		border: 2px solid black;
+	}
 }
 
 //=============================================

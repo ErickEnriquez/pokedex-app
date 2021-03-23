@@ -54,6 +54,12 @@
 	background-color: $light-orange;
 }
 
+.attribute-title{
+	margin-top: .5em;
+	background-color: $gray !important;
+	padding: 0em 3em  !important;
+	border-radius: 5px;
+}
 
 .pokemon-types{
 	text-transform: capitalize;
