@@ -13,10 +13,10 @@ class PokemonAttributes extends React.Component {
 
 		const weightAndHeight = activePokemon ? (
 			<div className="pokemon-w-t">
-				<span className="attribute-title">
+				<span>
 					Weight: {(activePokemon.weight) / 10} kg
 				</span>
-				<span className="attribute-title">
+				<span >
 					Height: {(activePokemon.height) / 10} m
 				</span>
 			</div>

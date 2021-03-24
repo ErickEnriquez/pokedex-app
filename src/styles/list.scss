@@ -6,6 +6,8 @@
 }
 .pokemon-list {
 	list-style-type: none;
+	width: 100px;
+	padding-left: 0pt;
 }
 li {
 	text-transform: capitalize;
@@ -41,6 +43,7 @@ li:focus {
 @media screen and(max-width: 576px) {
 	.pokemon-list-container {
 		height: 90%;
+		min-height: 120px;
 	}
 }
 @media screen and(min-width: 576px) {

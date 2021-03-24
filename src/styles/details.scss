@@ -1,6 +1,6 @@
 //Classes for the details container component
 //=====================================================================================================x
-.pokedex-details{
+.pokedex-details {
 	flex-grow: 2;
 	background-color: black;
 	display: grid;
@@ -8,6 +8,15 @@
 	grid-template-rows: 1fr 2fr;
 }
 
+@media screen and (max-width: 576px) {
+	.pokedex-details {
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.attribute-title {
+		padding: 0em 0em !important;
+	}
+}
 
 //Classes for the Pokemon Frame Component
 //====================================================================================================
@@ -18,136 +27,175 @@
 	text-align: justify;
 }
 
-.pokemon-image  {
-	width: 100%;	
+.pokemon-image {
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	border-bottom: 5px solid $purple;
-	border-left: 5px solid $purple	
+	border-left: 5px solid $purple;
 }
 
 //.pokemon-image img{
-		//animation: jump .5s 2 alternate;
+//animation: jump .5s 2 alternate;
 //}
 
- //@keyframes jump {
- 	//0% {
- 		//transform: translateY(0);
- 	//}
+//@keyframes jump {
+//0% {
+//transform: translateY(0);
+//}
 
- 	//100% {
- 		//transform: translateY(-10px);
- 	//}
- //}
+//100% {
+//transform: translateY(-10px);
+//}
+//}
 
 .pokemon-frame {
 	display: grid;
 	grid-template-rows: 1fr 2fr;
-	background: repeating-linear-gradient(0deg, $light-purple, $light-purple 5px, white 7px, white 10px);
+	background: repeating-linear-gradient(
+		0deg,
+		$light-purple,
+		$light-purple 5px,
+		white 7px,
+		white 10px
+	);
 	min-height: 25vh;
 }
 
 // Classes for Pokemon Attributes Component
 //====================================================================================================
-.pokemon-attributes{
+.pokemon-attributes {
 	grid-column: 2 / span 2;
 	background-color: $light-orange;
 }
 
-.attribute-title{
-	margin-top: .5em;
-	padding: 0em 3em  !important;
+.attribute-title {
+	margin-top: 0.5em;
 	font-weight: 600;
 	border-radius: 5px;
 }
 
-.pokemon-types{
+.pokemon-types {
 	text-transform: capitalize;
 	display: flex;
 	justify-content: space-evenly;
-	margin: .5em;
-	div{
+	margin: 0.5em;
+	div {
 		padding: 0em 2em;
 		border-radius: 5px;
 		color: white;
 	}
 }
 
-.pokemon-w-t{
+.pokemon-w-t {
 	display: flex;
 	justify-content: space-evenly;
-	span{
+	span {
 		background-color: white;
 		padding: 0em 1.5em;
 		border-radius: 5px;
 	}
 }
 
-.pokedex-entry{
+.pokedex-entry {
 	display: flex;
 	justify-content: space-evenly;
-	span{
-		margin-top: .5em;
+	span {
+		margin-top: 0.5em;
 		background-color: white;
 		padding: 0em 3em;
 		border-radius: 5px;
 	}
 }
 
-.pokemon-abilities{
-	margin-top: .5em;
+.pokemon-abilities {
+	margin-top: 0.5em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	flex-direction: column;
-	span{
+	span {
 		justify-self: center;
 		align-self: center;
 	}
-	.pokemon-ability{
-		margin-top:.3em;
+	.pokemon-ability {
+		margin-top: 0.3em;
 		background-color: white;
 		padding: 0em 2em;
 		border-radius: 5px;
 	}
 }
 
-.water{ background-color: $water-type; }
-.normal{ background-color: $normal-type; }
-.fire { background-color: $fire-type; }
-.electric { background-color: $electric-type; }
-.grass { background-color: $grass-type; }
-.ice { background-color: $ice-type; }
-.fighting { background-color: $fighting-type; }
-.poison { background-color: $poison-type; }
-.ground { background-color: $ground-type; }
-.flying { background-color: $flying-type; }
-.psychic { background-color: $psychic-type; }
-.bug { background-color: $bug-type; }
-.rock { background-color: $rock-type; }
-.ghost { background-color: $ghost-type; }
-.dragon { background-color: $dragon-type; }
-.dark { background-color: $dark-type; }
-.steel { background-color: $steel-type; }
-.fairy { background-color: $fairy-type; }
-
-
+.water {
+	background-color: $water-type;
+}
+.normal {
+	background-color: $normal-type;
+}
+.fire {
+	background-color: $fire-type;
+}
+.electric {
+	background-color: $electric-type;
+}
+.grass {
+	background-color: $grass-type;
+}
+.ice {
+	background-color: $ice-type;
+}
+.fighting {
+	background-color: $fighting-type;
+}
+.poison {
+	background-color: $poison-type;
+}
+.ground {
+	background-color: $ground-type;
+}
+.flying {
+	background-color: $flying-type;
+}
+.psychic {
+	background-color: $psychic-type;
+}
+.bug {
+	background-color: $bug-type;
+}
+.rock {
+	background-color: $rock-type;
+}
+.ghost {
+	background-color: $ghost-type;
+}
+.dragon {
+	background-color: $dragon-type;
+}
+.dark {
+	background-color: $dark-type;
+}
+.steel {
+	background-color: $steel-type;
+}
+.fairy {
+	background-color: $fairy-type;
+}
 
 // Classes for Text Container Component
 //====================================================================================================
-.text-container{
+.text-container {
 	grid-column: 1 / span 2;
 	grid-row: 2;
 	background-color: #aaa;
 }
 // Classes for Pokemon Stats Component
 ///====================================================================================================
-.pokemon-stats{
+.pokemon-stats {
 	display: flex;
 	flex-direction: column;
 }
 
-.stats{
+.stats {
 	flex-grow: 1;
 	display: flex;
 	justify-content: space-between;
@@ -157,14 +205,26 @@
 	color: #333;
 }
 
-.hp{ background-color: $color-hp; }
+.hp {
+	background-color: $color-hp;
+}
 
-.attack{ background-color: $color-attack; }
+.attack {
+	background-color: $color-attack;
+}
 
-.defense{ background-color: $color-defense; }
+.defense {
+	background-color: $color-defense;
+}
 
-.special-attack{ background-color: $color-sp-attack; }
+.special-attack {
+	background-color: $color-sp-attack;
+}
 
-.special-defense{ background-color: $color-sp-defense; }
+.special-defense {
+	background-color: $color-sp-defense;
+}
 
-.speed{background-color: $color-speed;}
+.speed {
+	background-color: $color-speed;
+}
