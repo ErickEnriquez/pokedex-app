@@ -19,19 +19,24 @@ class TextContainer extends React.Component {
 		}
 	}
 	render () {
+
 		const pokemonChain = this.state.evolutionChain ? this.state.evolutionChain.map(element => {
 			return (
-				<div>
+				<span className="pokemon-sprite">
 					<img src={element.sprites.front_default} alt={element.name} />
-				</div>
+				</span>
 			)
 		}) : null
+
 		return (
 			<div className="text-container">
-				{this.state.flavorText}
-				{pokemonChain}
+				<div className="flavor-text">
+					{this.state.flavorText}
+				</div>
+				<div>
+					{pokemonChain}
+				</div>
 			</div>
-
 		)
 	}
 }
