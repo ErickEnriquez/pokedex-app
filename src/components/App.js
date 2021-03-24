@@ -2,7 +2,7 @@ import React from 'react'
 import List from './List.js'
 import Details from './Details.js'
 import '../styles/layout.scss'
-import Pokedex from '../api/getKantoPokemon'
+import { getKantoPokemon } from '../api/getKantoPokemon'
 class App extends React.Component {
 	constructor(props) {
 		super(props)
@@ -11,7 +11,7 @@ class App extends React.Component {
 	}
 
 	async componentDidMount () {
-		let res = await Pokedex.getKantoPokemon()
+		let res = await getKantoPokemon()
 		this.setState({ pokemonList: res })
 		//console.log(this.state.pokemonList)
 	}
