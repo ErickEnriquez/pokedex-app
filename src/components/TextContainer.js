@@ -22,7 +22,7 @@ class TextContainer extends React.Component {
 
 		const pokemonChain = this.state.evolutionChain ? this.state.evolutionChain.map(element => {
 			return (
-				<span className="pokemon-sprite">
+				<span className="pokemon-sprite" key={element.name}>
 					<img src={element.sprites.front_default} alt={element.name} />
 				</span>
 			)
@@ -31,9 +31,11 @@ class TextContainer extends React.Component {
 		return (
 			<div className="text-container">
 				<div className="flavor-text">
+					<div className="attribute-title text-center">Pokemon Description:</div>
+					<br />
 					{this.state.flavorText}
 				</div>
-				<div>
+				<div className="pokemon-chain">
 					{pokemonChain}
 				</div>
 			</div>

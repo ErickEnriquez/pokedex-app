@@ -193,6 +193,8 @@
 .pokemon-stats {
 	display: flex;
 	flex-direction: column;
+	grid-row: 2;
+	grid-column: 3 / span 2;
 }
 
 .stats {
@@ -208,23 +210,38 @@
 .hp {
 	background-color: $color-hp;
 }
-
 .attack {
 	background-color: $color-attack;
 }
-
 .defense {
 	background-color: $color-defense;
 }
-
 .special-attack {
 	background-color: $color-sp-attack;
 }
-
 .special-defense {
 	background-color: $color-sp-defense;
 }
-
 .speed {
 	background-color: $color-speed;
+}
+
+// Classes for Pokemon Stats Component
+///====================================================================================================
+.pokemon-chain {
+	display: flex;
+	justify-content: space-evenly;
+	span img {
+		width: 100%;
+	}
+}
+
+.flavor-text {
+	display: inline-block;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.text-center {
+	text-align: center;
 }
