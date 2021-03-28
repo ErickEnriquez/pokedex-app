@@ -8,7 +8,7 @@
 	grid-template-rows: 1fr 2fr;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $phone-screen-width) {
 	.pokedex-details {
 		grid-template-rows: 1fr 1fr;
 	}
@@ -84,6 +84,15 @@
 		padding: 0em 2em;
 		border-radius: 5px;
 		color: white;
+	}
+}
+
+@media screen and (max-width: $phone-screen-width){
+	.pokemon-types{
+		flex-direction: column;
+	}
+	.pokemon-w-t{
+		flex-direction: column;
 	}
 }
 
@@ -233,6 +242,8 @@
 	justify-content: space-evenly;
 	span img {
 		width: 100%;
+		background-color: white;
+		border-radius: 50%;
 	}
 }
 
