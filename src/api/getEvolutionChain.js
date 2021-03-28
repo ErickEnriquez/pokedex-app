@@ -17,7 +17,7 @@ export const getEvolutionChain = async (activePokemon) => {
 		//temp.species.url since we want url to the sprites which is only returned when using first url
 		pokemonInChain.push(await axios.get(`https://pokeapi.co/api/v2/pokemon/${temp.species.name}/`))
 		temp = temp?.evolves_to[0]
-	}
+}
 
 	const finalChain = await Promise.all(pokemonInChain)
 
