@@ -13,7 +13,6 @@ class App extends React.Component {
 	async componentDidMount () {
 		let res = await getKantoPokemon()
 		this.setState({ pokemonList: res })
-		//console.log(this.state.pokemonList)
 	}
 
 	getSelectedPokemon (index) {
@@ -25,7 +24,7 @@ class App extends React.Component {
 		return (
 			<main className="container">
 				<List pokemonList={this.state.pokemonList} getSelectedPokemon={this.getSelectedPokemon} />
-				<Details activePokemon={this.state.activePokemon} />
+				<Details activePokemon={this.state.activePokemon} getSelectedPokemon={this.getSelectedPokemon} pokemonList={this.state.pokemonList} />
 			</main>
 		)
 	}

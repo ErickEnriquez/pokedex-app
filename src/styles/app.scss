@@ -8,13 +8,13 @@
 	border-radius: 15px;
 }
 //tablet sized devices
-@media screen and (max-width: 992px) and (min-width: 577px) {
+@media screen and (max-width: $medium) and (min-width: $small) {
 	.container {
 		width: 90%;
 	}
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: $small) {
 	.container {
 		width: 90%;
 		display: grid;

@@ -9,6 +9,7 @@ class TextContainer extends React.Component {
 			flavorText: '',
 			evolutionChain: []
 		}
+		this.changeActivePokemon = this.changeActivePokemon.bind(this)
 	}
 
 	async componentDidUpdate (prevProps, prevState) {
@@ -18,13 +19,24 @@ class TextContainer extends React.Component {
 			this.setState({ flavorText, evolutionChain })
 		}
 	}
-	render () {
 
-		const pokemonChain = this.state.evolutionChain ? this.state.evolutionChain.map(element => {
+	changeActivePokemon (event) {
+		const val = event.target.alt
+
+		const index = this.props.pokemonList.findIndex((pokemon) => pokemon.name === val)
+
+		if (index === -1) {
+			alert('Sorry No Info Available')
+			return
+		}
+		this.props.getSelectedPokemon(index)
+	}
+	render () {
+		const pokemonChain = this.state.evolutionChain ? this.state.evolutionChain.map(pokemon => {
 			return (
-				<span className="pokemon-sprite" key={element.name}>
-					<p>{element.name}</p>
-					<img src={element.sprites.front_default} alt={element.name} />
+				<span className="pokemon-sprite" key={pokemon.name} value={pokemon.name} onClick={this.changeActivePokemon}>
+					<p>{pokemon.name}</p>
+					<img src={pokemon.sprites.front_default} alt={pokemon.name} value={pokemon.name} />
 				</span>
 			)
 		}) : null
@@ -36,7 +48,7 @@ class TextContainer extends React.Component {
 					<br />
 					{this.state.flavorText}
 				</div>
-				<h3>Pokemon Evolution Chain</h3><br/>
+				<h3>Pokemon Evolution Chain</h3><br />
 				<div className="pokemon-chain">
 					{pokemonChain}
 				</div>
