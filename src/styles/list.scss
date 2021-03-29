@@ -23,7 +23,7 @@ li {
 li:hover {
 	background-color: black;
 	color: white;
-	transition: .3s ease-in-out;
+	transition: 0.3s ease-in-out;
 	cursor: pointer;
 }
 li:focus {
@@ -63,7 +63,8 @@ li:focus {
 
 	/* Works on Chrome, Edge, and Safari */
 	*::-webkit-scrollbar {
-		width: 6vw;
+		width: 30px;
+		height: 10px;
 	}
 
 	*::-webkit-scrollbar-track {
