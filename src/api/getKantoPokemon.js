@@ -5,7 +5,7 @@ const fetch = require('node-fetch')
 export const getKantoPokemon =  async () => {
 		//create an array of promises to pass to PromiseAll
 		let responses = [];
-		for (let i = 1; i <= 151; i++) {
+		for (let i = 1; i <= 893; i++) {
 			responses.push(fetch(`https://pokeapi.co/api/v2/pokemon/${i}/`));
 		}
 		//wait until we get response from all of the responses

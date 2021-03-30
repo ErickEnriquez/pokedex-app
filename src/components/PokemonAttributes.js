@@ -7,7 +7,7 @@ class PokemonAttributes extends React.Component {
 
 		const pokedexEntry = activePokemon ? (
 			<div className="pokedex-entry">
-				<span className="attribute-title">No: </span> <span>{activePokemon.game_indices[9].game_index}</span>
+				<span className="attribute-title">No: </span> <span>{activePokemon.game_indices[9]?.game_index}</span>
 			</div>
 		) : null
 

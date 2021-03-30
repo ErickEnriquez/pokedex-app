@@ -1,8 +1,8 @@
 .container {
-	width: 70%;
+	width: 60%;
 	margin: auto;
 	display: flex;
-	height: 75vh;
+	height: 50vh;
 	background-color: $red;
 	padding: 1em;
 	border-radius: 15px;
@@ -18,7 +18,12 @@
 	.container {
 		width: 90%;
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		height: 100vh;
 	}
+}
+
+.white-text{
+	color: white;
+	text-shadow: 5px 5px 10px #000;
 }
