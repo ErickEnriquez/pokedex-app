@@ -8,17 +8,17 @@
 	border-radius: 15px;
 }
 //tablet sized devices
-@media screen and (max-width: $medium) and (min-width: $small) {
+@media screen and (max-width: 768px) and (min-width: 577px) {
 	.container {
 		width: 90%;
 	}
 }
 
-@media screen and (max-width: $small) {
+@media screen and (max-width: 576px) {
 	.container {
 		width: 90%;
-		display: grid;
-		grid-template-rows: 1fr 3fr;
+		display: flex;
+		flex-direction: column-reverse;
 		height: 100vh;
 	}
 }
