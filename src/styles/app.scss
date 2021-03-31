@@ -7,6 +7,13 @@
 	padding: 1em;
 	border-radius: 15px;
 }
+
+.loading-bars {
+	align-self: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
 //tablet sized devices
 @media screen and (max-width: 768px) and (min-width: 577px) {
 	.container {
@@ -23,7 +30,7 @@
 	}
 }
 
-.white-text{
+.white-text {
 	color: white;
 	text-shadow: 5px 5px 10px #000;
 }
