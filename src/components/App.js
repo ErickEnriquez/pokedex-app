@@ -28,7 +28,8 @@ class App extends React.Component {
 	render () {
 		return (
 			<main className="container">
-				{ this.state.isLoading ? (
+				{ this.state.isLoading ? 
+				(
 					<div className="loading-bars">
 						<ReactLoading type={"bubbles"} color={"white"} />
 					</div>
