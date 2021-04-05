@@ -9,12 +9,22 @@ class Details extends React.Component {
 		return (
 			<div className="pokedex-details">
 				<div className="row-one">
-					<PokemonFrame activePokemon={this.props.activePokemon} />
-					<PokemonAttributes activePokemon={this.props.activePokemon} />
+					<PokemonFrame
+						activePokemon={this.props.activePokemon}
+					/>
+					<PokemonAttributes
+						activePokemon={this.props.activePokemon}
+					/>
 				</div>
 				<div className="row-two">
-					<TextContainer activePokemon={this.props.activePokemon} getSelectedPokemon={this.props.getSelectedPokemon} pokemonList={this.props.pokemonList} />
-					<PokemonStats activePokemon={this.props.activePokemon} />
+					<TextContainer
+						activePokemon={this.props.activePokemon}
+						getSelectedPokemon={this.props.getSelectedPokemon}
+						pokemonList={this.props.pokemonList}
+					/>
+					<PokemonStats
+						activePokemon={this.props.activePokemon}
+					/>
 				</div>
 			</div>
 		)

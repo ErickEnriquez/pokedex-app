@@ -17,7 +17,11 @@ class List extends React.Component {
 				<ul className="pokemon-list">
 					{this.props.pokemonList.map((pokemon, index) => {
 						return (
-							<li className={`${pokemon.types[0].type.name} white-text`} key={pokemon.name} value={index} onClick={this.handleClick}>
+							<li
+								className={`${pokemon.types[0].type.name} white-text`}
+								key={pokemon.name}
+								value={index}
+								onClick={this.handleClick}>
 								{pokemon.name}
 							</li>
 						)
