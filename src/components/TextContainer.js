@@ -45,10 +45,9 @@ class TextContainer extends React.Component {
 			<div className="text-container">
 				<div className="flavor-text">
 					<div className="attribute-title text-center">Pokemon Description:</div>
-					<br />
 					{this.state.flavorText}
 				</div>
-				<h3>Pokemon Evolution Chain</h3><br />
+				<h3>Pokemon Evolution Chain</h3>
 				<div className="pokemon-chain">
 					{pokemonChain}
 				</div>
