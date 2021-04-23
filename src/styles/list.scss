@@ -2,7 +2,7 @@
 	background: $light-gray;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	height: 70vh;
+	max-height: 80vh;
 	min-width: 170px;
 }
 .pokemon-list {

@@ -33,12 +33,14 @@ class App extends React.Component {
 						<ReactLoading type={"bubbles"} color={"white"} />
 					</div>
 					:
-
-					<Screen
-						activePokemon={this.state.activePokemon}
-						getSelectedPokemon={this.getSelectedPokemon}
-						pokemonList={this.state.pokemonList}
-					/>
+					<>
+						<Screen
+							activePokemon={this.state.activePokemon}
+							getSelectedPokemon={this.getSelectedPokemon}
+							pokemonList={this.state.pokemonList}
+						/>
+					
+					</>
 				}
 			</main>
 		)

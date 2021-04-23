@@ -1,6 +1,6 @@
 
-import List from './List'
-import Details from './Details'
+import List from './Screen/List'
+import Details from './Screen/Details'
 
 const Screen = (props) => {
 	return (
