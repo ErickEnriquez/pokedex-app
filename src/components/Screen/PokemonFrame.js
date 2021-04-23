@@ -4,10 +4,10 @@ import React from 'react'
 //ability to change generation so I think its a good idea to break into a new
 //component
 const PokemonFrame = (props) => {
-	const image = props.activePokemon ? props.activePokemon.sprites.versions['generation-i']['red-blue'].front_default : ''
+	//const image = props.activePokemon ? props.activePokemon.sprites.versions['generation-i']['red-blue'].front_default : ''
 	//const image = props.activePokemon ? props.activePokemon.sprites.versions['generation-iii']['emerald'].front_default : ''
 	//const image = props.activePokemon ? props.activePokemon.sprites.versions['generation-ii']['crystal'].front_default : ''
-	//const image = props.activePokemon ? props.activePokemon.sprites.front_default : ''
+	const image = props.activePokemon ? props.activePokemon.sprites.front_default : ''
 	return (
 		<div className="pokemon-frame">
 			{props.activePokemon ?
@@ -19,7 +19,7 @@ const PokemonFrame = (props) => {
 						<img src={image} alt={props.activePokemon.name}></img>
 					</div>
 				</>
-				: ''}
+				: null}
 		</div>
 	)
 }

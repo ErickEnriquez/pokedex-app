@@ -10,7 +10,7 @@ const PokemonStats = (props) => {
 				<span>{item.stat.name}:</span>
 				<span>{item.base_stat}</span>
 			</div>)
-	}) : ''
+	}) : null
 
 	return (
 		<div className="pokemon-stats">
