@@ -35,7 +35,7 @@ class TextContainer extends React.Component {
 		const pokemonChain = this.state.evolutionChain ? this.state.evolutionChain.map(pokemon => {
 			return (
 				<span className="pokemon-sprite" key={pokemon.name} value={pokemon.name} onClick={this.changeActivePokemon}>
-					<p>{pokemon.name}</p>
+					<p className="sprite-name">{pokemon.name}</p>
 					<img src={pokemon.sprites.front_default} alt={pokemon.name} value={pokemon.name} />
 				</span>
 			)

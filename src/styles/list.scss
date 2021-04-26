@@ -1,13 +1,13 @@
 .pokemon-list-container {
-	background: $light-gray;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	max-height: 80vh;
-	min-width: 170px;
+	//background: $light-gray;
+	//overflow-y: scroll;
+	//overflow-x: hidden;
+	//max-height: 80vh;
+	//min-width: 170px;
 }
 .pokemon-list {
 	list-style-type: none;
-	width: 100px;
+	//width: 100px;
 	padding-left: 0pt;
 }
 li {
@@ -90,14 +90,17 @@ li:focus {
 }
 
 .modal-main {
-	position: absolute;
+	//position: absolute;
 	background: black;
-	width: 20%;
-	height: auto;
-	top: 50%;
-	left: 50%;
-	overflow-y: scroll;
-	overflow-x: scroll;
+	width: 30%;
+	height: 90vh;
+	overflow-y: auto;
+	margin-left: auto;
+	margin-right: auto;
+	//top: 50%;
+	//left: 50%;
+	//overflow-y: scroll;
+	//overflow-x: scroll;
 }
 
 .display-block {

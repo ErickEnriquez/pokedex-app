@@ -1,0 +1,30 @@
+.game-boy-title {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	font-size: 1.5em;
+}
+
+.game-boy {
+	color: white;
+	font-weight: 700;
+}
+
+.color {
+	font-weight: 700;
+	.first {
+		color: #7d094a;
+	}
+	.second {
+		color: #4d5383;
+	}
+	.third {
+		color: #9dcb68;
+	}
+	.fourth {
+		color: #ebd959;
+	}
+	.fifth {
+		color: #0c98a7;
+	}
+}
