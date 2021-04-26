@@ -16,24 +16,19 @@ class List extends React.Component {
 
 		return (
 			<div className={`pokemon-list-container ${showHideClassName}`} >
-				<section className="modal-main">
-					<ul className="pokemon-list">
-						{this.props.pokemonList?.map((pokemon, index) => {
-							return (
-								<li
-									className={`${pokemon.types[0].type.name} white-text`}
-									key={pokemon.name}
-									value={index}
-									onClick={this.handleClick}>
-									{pokemon.name}
-								</li>
-							)
-						})}
-					</ul>
-				</section>
-					
-				
-				  <button type="button" onClick={this.props.handleClose}> Close </button>
+				<ul className="pokemon-list modal-main">
+					{this.props.pokemonList?.map((pokemon, index) => {
+						return (
+							<li
+								className={`${pokemon.types[0].type.name} white-text`}
+								key={pokemon.name}
+								value={index}
+								onClick={this.handleClick}>
+								{pokemon.name}
+							</li>
+						)
+					})}
+				</ul>
 			</div>
 		)
 	}

@@ -24,7 +24,7 @@ class App extends React.Component {
 	// get list of pokemon and update state
 	async componentDidMount () {
 		let res = await getKantoPokemon()
-		this.setState({ pokemonList: res, isLoading: false })
+		this.setState({ pokemonList: res, isLoading: false , showModal:true})
 	}
 
 	// gets selected mon given index , is used by children to update state in parent
@@ -47,6 +47,7 @@ class App extends React.Component {
 							activePokemon={this.state.activePokemon}
 							getSelectedPokemon={this.getSelectedPokemon}
 							pokemonList={this.state.pokemonList}
+							showModal={this.showModal}
 						/>
 						<List
 							show={this.state.showModal}
@@ -55,10 +56,6 @@ class App extends React.Component {
 							getSelectedPokemon={this.getSelectedPokemon}
 							activePokemon={this.state.activePokemon}
 						/>
-
-
-						<button type="button" onClick={this.showModal}> Open </button>
-
 					</>
 				}
 			</main>
