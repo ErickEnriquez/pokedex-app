@@ -1,10 +1,10 @@
 import React from 'react'
-import PokemonFrame from './Screen/PokemonFrame.js'
-import PokemonAttributes from './Screen/PokemonAttributes.js'
-import TextContainer from './Screen/TextContainer'
-import PokemonStats from './Screen/PokemonStats.js'
-import GameBoyTitle from './Screen/GameBoyTitle.js'
-import PowerIndicator from './Screen/PowerIndicator.js'
+import PokemonFrame from 'components/Screen/PokemonFrame.js'
+import PokemonAttributes from 'components/Screen/PokemonAttributes.js'
+import TextContainer from 'components/Screen/TextContainer'
+import PokemonStats from 'components/Screen/PokemonStats.js'
+import GameBoyTitle from 'components/Screen/GameBoyTitle.js'
+import PowerIndicator from 'components/Screen/PowerIndicator.js'
 
 class Screen extends React.Component {
 	render () {

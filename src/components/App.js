@@ -1,8 +1,8 @@
 import React from 'react'
-import Screen from './Screen.js'
-import List from './List'
-import '../styles/layout.scss'
-import { getKantoPokemon } from '../api/getKantoPokemon'
+import Screen from 'components/Screen'
+import List from 'components/List'
+import 'styles/layout.scss'
+import { getKantoPokemon } from 'api/getKantoPokemon'
 import ReactLoading from 'react-loading'
 class App extends React.Component {
 	constructor(props) {

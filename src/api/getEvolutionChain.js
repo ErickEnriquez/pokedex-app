@@ -25,7 +25,7 @@ export const getEvolutionChain = async (activePokemon) => {
 		return element.data
 	})
 
-
-
 	return data
 }
+
+export default getEvolutionChain

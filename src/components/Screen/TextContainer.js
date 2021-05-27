@@ -1,6 +1,6 @@
 import React from 'react'
-import { getFlavorText } from '../../api/getFlavorText'
-import { getEvolutionChain } from '../../api/getEvolutionChain'
+import { getFlavorText } from 'api/getFlavorText'
+import { getEvolutionChain } from 'api/getEvolutionChain'
 class TextContainer extends React.Component {
 
 	constructor(props) {

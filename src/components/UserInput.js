@@ -1,3 +1,3 @@
 //Encapsulate the User Input 
-import Gamepad from './UserInput/Gamepad'
-import Button from './UserInput/RoundButton'
+import Gamepad from 'components/UserInput/Gamepad'
+import Button from 'components/UserInput/RoundButton'
