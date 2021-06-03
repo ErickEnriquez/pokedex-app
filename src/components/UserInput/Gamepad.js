@@ -3,12 +3,12 @@ import React from 'react'
 class Gamepad extends React.Component {
 	render () {
 		return (
-			<div class="set">
-				<nav class="d-pad">
-					<a class="up" href="#"></a>
-					<a class="right" href="#"></a>
-					<a class="down" href="#"></a>
-					<a class="left" href="#"></a>
+			<div className="set">
+				<nav className="d-pad">
+					<a className="up" href="#"></a>
+					<a className="right" href="#"></a>
+					<a className="down" href="#"></a>
+					<a className="left" href="#"></a>
 				</nav>
 			</div>
 		)

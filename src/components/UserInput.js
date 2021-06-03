@@ -4,11 +4,16 @@ import Button from 'components/UserInput/RoundButton'
 import React from 'react'
 
 class UserInput extends React.Component {
-
 	render () {
-		return (
+		const UI = this.props.show ? null : (
 			<>
 				<Gamepad />
+			</>
+		)
+
+		return (
+			<>
+				{UI}
 			</>
 		)
 	}
