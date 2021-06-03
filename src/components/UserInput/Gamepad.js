@@ -3,9 +3,13 @@ import React from 'react'
 class Gamepad extends React.Component {
 	render () {
 		return (
-			<div>
-				Gamepad HERE
-			</div>
+			<section>
+				<div className="vertical-line">
+					<div className="arrow-up">
+
+					</div>
+				</div>
+			</section>
 		)
 	}
 }

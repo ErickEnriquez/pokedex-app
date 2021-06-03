@@ -1,6 +1,7 @@
 import React from 'react'
 import Screen from 'components/Screen'
 import List from 'components/List'
+import UserInput from 'components/UserInput'
 import 'styles/layout.scss'
 import { getKantoPokemon } from 'api/getKantoPokemon'
 import ReactLoading from 'react-loading'
@@ -24,7 +25,7 @@ class App extends React.Component {
 	// get list of pokemon and update state
 	async componentDidMount () {
 		let res = await getKantoPokemon()
-		this.setState({ pokemonList: res, isLoading: false , showModal:true})
+		this.setState({ pokemonList: res, isLoading: false, showModal: true })
 	}
 
 	// gets selected mon given index , is used by children to update state in parent
@@ -56,6 +57,7 @@ class App extends React.Component {
 							getSelectedPokemon={this.getSelectedPokemon}
 							activePokemon={this.state.activePokemon}
 						/>
+						<UserInput />
 					</>
 				}
 			</main>
