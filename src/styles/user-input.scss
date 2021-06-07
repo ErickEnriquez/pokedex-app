@@ -1,0 +1,28 @@
+.user-input {
+	display: flex;
+	justify-content: space-between;
+}
+
+.round-buttons {
+	display: flex;
+	align-items: center;
+	margin-right: 50px;
+}
+
+.round-button {
+	height: 90px;
+	width: 90px;
+	border-radius: 50%;
+	background-color: #111;
+	color: #aaa;
+	border: none;
+}
+
+.round-button:nth-child(2) {
+	margin-bottom: 90px;
+}
+
+.round-button:hover {
+	background-color: #666;
+	cursor: pointer;
+}

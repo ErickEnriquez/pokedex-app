@@ -110,3 +110,9 @@ li:focus {
 .display-none {
 	display: none;
 }
+
+@media screen and (max-width: 767px) {
+	.modal-main {
+		width: 90%;
+	}
+}
