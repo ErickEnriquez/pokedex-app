@@ -26,3 +26,13 @@
 	background-color: #666;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 576px) {
+	.round-buttons {
+		margin-right: 0px;
+	}
+	.round-button {
+		width: 70px;
+		height: 70px;
+	}
+}

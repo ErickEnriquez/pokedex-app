@@ -304,3 +304,10 @@ $dpad-arrow-move: 35%;
 .d-pad.right a.right:before {
 	border-left-color: #333;
 }
+
+@media screen and (max-width: 576px) {
+	.d-pad {
+		width: 120px;
+		height: 120px;
+	}
+}
