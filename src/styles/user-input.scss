@@ -3,6 +3,7 @@
 	justify-content: space-between;
 }
 
+//	ROUND BUTTON CLASSES
 .round-buttons {
 	display: flex;
 	align-items: center;
@@ -16,6 +17,8 @@
 	background-color: #111;
 	color: #aaa;
 	border: none;
+	font-size: 1.1em;
+	font-weight: 700;
 }
 
 .round-button:nth-child(2) {
@@ -35,4 +38,27 @@
 		width: 70px;
 		height: 70px;
 	}
+}
+
+//	LONG BUTTON CLASSES
+.long-buttons {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5em;
+}
+.long-button {
+	border-radius: 10px;
+	background-color: #111;
+	color: #aaa;
+	border: none;
+	padding: 5px 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+.long-button:hover {
+	cursor: pointer;
+	background-color: #666;
 }
