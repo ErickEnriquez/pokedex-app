@@ -22,7 +22,7 @@ class UserInput extends React.Component {
 					</div>
 				</div>
 				<div className="long-buttons">
-					<LongButton buttonText="Start" />
+					<LongButton buttonText="Start" showModal={this.props.showModal} />
 					<LongButton buttonText="Select" />
 				</div>
 			</>

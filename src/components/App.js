@@ -62,6 +62,7 @@ class App extends React.Component {
 							pokemonList={this.state.pokemonList}
 							getSelectedPokemon={this.getSelectedPokemon}
 							activePokemon={this.state.activePokemon}
+							showModal={this.showModal}
 						/>
 					</>
 				}

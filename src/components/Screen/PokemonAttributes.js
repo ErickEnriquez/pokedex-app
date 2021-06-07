@@ -49,7 +49,6 @@ class PokemonAttributes extends React.Component {
 				<div className="pokemon-abilities">
 					<span className="attribute-title">Pokemon Abilities:</span> {abilities}
 				</div>
-				<button onClick={this.props.showModal}>Open</button>
 			</div>
 		)
 	}
